@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1361545052 source:/home/llxp/Programme/lern_programme/structs_map_new/structs.c
+
+1361626674 source:/home/llxp/Programme/lern_programme/structs_map_new/main.c
+	"defined.h"
+
+1361545052 /home/llxp/Programme/lern_programme/structs_map_new/structs.c
+
+1361626613 /home/llxp/Programme/lern_programme/structs_map_new/funcs.h
+
+1361626806 /home/llxp/Programme/lern_programme/structs_map_new/defined.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"structs.h"
+	"funcs.h"
+
+1362496955 /home/llxp/Programme/lern_programme/structs_map_new/structs.h
+

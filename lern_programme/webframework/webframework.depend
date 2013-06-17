@@ -1,0 +1,99 @@
+# depslib dependency file v1.0
+1367962813 source:/home/llxp/Programme/lern_programme/webframework/main.c
+	"defined.h"
+
+1367960134 /home/llxp/Programme/lern_programme/webframework/defined.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funcs.h"
+	"htmlfuncs.h"
+	"arrays.h"
+	"mysql_funcs.h"
+	<time.h>
+
+1367962559 /home/llxp/Programme/lern_programme/webframework/funcs.h
+
+1366809594 /home/llxp/Programme/lern_programme/webframework/htmlfuncs.h
+
+1367962847 /home/llxp/Programme/lern_programme/webframework/arrays.h
+
+1367882935 /home/llxp/Programme/lern_programme/webframework/mysql_funcs.h
+	<my_global.h>
+	<mysql.h>
+
+1364217298 /usr/include/mysql/my_global.h
+	<my_config.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<io.h>
+	<process.h>
+	<sys/types.h>
+	<pthread.h>
+	<pthread.h>
+	<stdio.h>
+	<stdarg.h>
+	<stdlib.h>
+	<stddef.h>
+	<math.h>
+	<limits.h>
+	<float.h>
+	<fenv.h>
+	<sys/types.h>
+	<fcntl.h>
+	<sys/timeb.h>
+	<sys/time.h>
+	<time.h>
+	<sys/time.h>
+	<time.h>
+	<unistd.h>
+	<alloca.h>
+	<errno.h>
+	<crypt.h>
+	<assert.h>
+	<sys/stream.h>
+	<my_compiler.h>
+	<sys/socket.h>
+	<my_dbug.h>
+	<dlfcn.h>
+	<new>
+
+1366608681 /usr/include/mysql/my_config.h
+
+1364217298 /usr/include/mysql/my_compiler.h
+	<my_global.h>
+	<my_attribute.h>
+
+1364217298 /usr/include/mysql/my_attribute.h
+
+1364217298 /usr/include/mysql/my_dbug.h
+	<sys/types.h>
+	<unistd.h>
+	<signal.h>
+	<crtdbg.h>
+
+1364217298 /usr/include/mysql/mysql.h
+	<standards.h>
+	<sys/types.h>
+	<winsock2.h>
+	"mysql_version.h"
+	"mysql_com.h"
+	"mysql_time.h"
+	"my_list.h"
+	"typelib.h"
+	"my_alloc.h"
+
+1366608681 /usr/include/mysql/mysql_version.h
+	<custom_conf.h>
+
+1364217298 /usr/include/mysql/mysql_com.h
+
+1364217298 /usr/include/mysql/mysql_time.h
+
+1364217298 /usr/include/mysql/my_list.h
+
+1364217298 /usr/include/mysql/typelib.h
+	"my_alloc.h"
+
+1364217298 /usr/include/mysql/my_alloc.h
+

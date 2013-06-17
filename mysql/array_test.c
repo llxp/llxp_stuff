@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+int main(void){
+int *array;
+array = new int[10];
+/* Array füllen bla */
+array_new = new int[12];
+for(int i=0; i<array.length; i++) {
+   array_new[i] = array[i];
+}
+/* Array weiter füllen bla */
+}

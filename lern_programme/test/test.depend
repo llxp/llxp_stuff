@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1360621398 source:/home/llxp/Programme/lern_programme/test/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1360621507 source:/home/llxp/Programme/lern_programme/test/main2.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

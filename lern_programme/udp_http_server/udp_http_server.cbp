@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="udp_http_server" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="/home/llxp/Programme/lern_programme/udp_http_server/debug/bin/udp_http_server" prefix_auto="1" extension_auto="1" />
+				<Option object_output="/home/llxp/Programme/lern_programme/udp_http_server/debug/obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="`mysql_config --cflags`" />
+				</Compiler>
+				<Linker>
+					<Add option="`mysql_config --libs`" />
+					<Add library="/opt/xulrunner/components/libdbusservice.so" />
+					<Add library="/opt/xulrunner/components/libmozgnome.so" />
+					<Add library="/opt/xulrunner/libfreebl3.so" />
+					<Add library="/opt/xulrunner/libmozalloc.so" />
+					<Add library="/opt/xulrunner/libmozsqlite3.so" />
+					<Add library="/opt/xulrunner/libnspr4.so" />
+					<Add library="/opt/xulrunner/libnss3.so" />
+					<Add library="/opt/xulrunner/libnssckbi.so" />
+					<Add library="/opt/xulrunner/libnssdbm3.so" />
+					<Add library="/opt/xulrunner/libnssutil3.so" />
+					<Add library="/opt/xulrunner/libplc4.so" />
+					<Add library="/opt/xulrunner/libplds4.so" />
+					<Add library="/opt/xulrunner/libsmime3.so" />
+					<Add library="/opt/xulrunner/libsoftokn3.so" />
+					<Add library="/opt/xulrunner/libssl3.so" />
+					<Add library="/opt/xulrunner/libxpcom.so" />
+					<Add library="/opt/xulrunner/libxul.so" />
+					<Add library="/usr/lib/gtk-2.0/2.10.0/engines/libaurora.so" />
+					<Add library="/usr/lib/firefox-devel/lib/libcrmf.a" />
+					<Add library="/usr/lib/firefox-devel/lib/libmozalloc.so" />
+					<Add library="/usr/lib/firefox-devel/lib/libmozglue.a" />
+					<Add library="/usr/lib/firefox-devel/lib/libnspr4.so" />
+					<Add library="/usr/lib/firefox-devel/lib/libnss.a" />
+					<Add library="/usr/lib/firefox-devel/lib/libnssutil.a" />
+					<Add library="/usr/lib/firefox-devel/lib/libplc4.so" />
+					<Add library="/usr/lib/firefox-devel/lib/libplds4.so" />
+					<Add library="/usr/lib/firefox-devel/lib/libsmime.a" />
+					<Add library="/usr/lib/firefox-devel/lib/libssl.a" />
+					<Add library="/usr/lib/firefox-devel/lib/libunicharutil_external_s.a" />
+					<Add library="/usr/lib/firefox-devel/lib/libxpcom.so" />
+					<Add library="/usr/lib/firefox-devel/lib/libxpcomglue.a" />
+					<Add library="/usr/lib/firefox-devel/lib/libxpcomglue_s.a" />
+					<Add library="/usr/lib/firefox-devel/lib/libxpcomglue_s_nomozalloc.a" />
+					<Add library="/usr/lib/firefox-devel/lib/libxul.so" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libcrmf.a" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libmozalloc.so" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libmozglue.a" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libnspr4.so" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libnss.a" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libnssutil.a" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libplc4.so" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libplds4.so" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libsmime.a" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libssl.a" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libunicharutil_external_s.a" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libxpcom.so" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libxpcomglue.a" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libxpcomglue_s.a" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libxpcomglue_s_nomozalloc.a" />
+					<Add library="/usr/lib/firefox-devel/sdk/lib/libxul.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="/home/llxp/Programme/lern_programme/udp_http_server/udp_http_server" prefix_auto="1" extension_auto="1" />
+				<Option object_output="/home/llxp/Programme/lern_programme/udp_http_server/obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="pod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="udp_test.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

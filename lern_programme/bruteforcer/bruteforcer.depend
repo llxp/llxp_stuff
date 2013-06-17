@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1360624178 source:/home/llxp/Programme/lern_programme/bruteforcer/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

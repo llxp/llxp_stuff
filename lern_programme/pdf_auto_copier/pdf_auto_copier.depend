@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1366931146 source:/home/llxp/Programme/lern_programme/pdf_auto_copier/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<dirent.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<time.h>
+

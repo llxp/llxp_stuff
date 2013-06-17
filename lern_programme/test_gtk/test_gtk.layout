@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="gtk_menu_tutorial_2.c" open="1" top="0" tabpos="12">
+		<Cursor position="1996" topLine="27" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1">
+		<Cursor position="503" topLine="0" />
+	</File>
+	<File name="main_3.c" open="1" top="0" tabpos="9">
+		<Cursor position="770" topLine="0" />
+	</File>
+	<File name="main_4.c" open="1" top="0" tabpos="10">
+		<Cursor position="1870" topLine="30" />
+	</File>
+	<File name="main_5.c" open="1" top="0" tabpos="13">
+		<Cursor position="564" topLine="0" />
+	</File>
+	<File name="main_gtk_html_test.c" open="1" top="0" tabpos="14">
+		<Cursor position="1081" topLine="0" />
+	</File>
+	<File name="main_menu_tutorial.c" open="1" top="0" tabpos="11">
+		<Cursor position="777" topLine="17" />
+	</File>
+</CodeBlocks_layout_file>

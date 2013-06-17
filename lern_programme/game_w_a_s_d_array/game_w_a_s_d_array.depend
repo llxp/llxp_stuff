@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1359322599 source:/home/llxp/Programme/lern_programme/game_w_a_s_d_array/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1359322733 source:/home/llxp/Programme/lern_programme/game_w_a_s_d_array/main_2.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

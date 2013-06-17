@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1368476215 source:/home/llxp/Programme/lern_programme/shifter/main.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+

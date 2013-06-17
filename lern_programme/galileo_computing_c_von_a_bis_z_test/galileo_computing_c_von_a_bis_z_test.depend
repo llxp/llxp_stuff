@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1367884142 source:/home/llxp/Programme/lern_programme/galileo_computing_c_von_a_bis_z_test/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

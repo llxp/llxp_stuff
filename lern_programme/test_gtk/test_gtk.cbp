@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="test_gtk" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="/home/llxp/Programme/lern_programme/shifter/debug/bin/test_gtk" prefix_auto="1" extension_auto="1" />
+				<Option object_output="/home/llxp/Programme/lern_programme/shifter/debug/obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="`pkg-config --cflags gtk+-2.0 webkitgtk-3.0`" />
+					<Add directory="/usr/include/gtk-2.0/" />
+					<Add directory="/usr/include/cairo/" />
+					<Add directory="/usr/include/gdk-pixbuf-2.0" />
+					<Add directory="/usr/include/pango-1.0" />
+					<Add directory="/usr/include/" />
+					<Add directory="/usr/include/gio-unix-2.0/gio" />
+					<Add directory="/usr/include/glib-2.0" />
+					<Add directory="/opt/xulrunner/components" />
+				</Compiler>
+				<Linker>
+					<Add option="`pkg-config --libs gtk+-2.0 webkitgtk-3.0`" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="/home/llxp/Programme/lern_programme/shifter/test_gtk" prefix_auto="1" extension_auto="1" />
+				<Option object_output="/home/llxp/Programme/lern_programme/shifter/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`pkg-config --cflags`" />
+		</Compiler>
+		<Linker>
+			<Add option="`--libs gtk+-2.0`" />
+		</Linker>
+		<Unit filename="base_2.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="gtk_menu_tutorial_2.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="main_3.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="main_4.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="main_5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main_gtk_html_test.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="main_menu_tutorial.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

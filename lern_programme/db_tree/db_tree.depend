@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1363990062 source:/home/llxp/Programme/lern_programme/db_tree/main.c
+	<stdio.h>
+	<stdlib.h>
+	"defined.h"
+
+1363989977 /home/llxp/Programme/lern_programme/db_tree/defined.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"structs.h"
+	"funcs.h"
+	"funcs_bin.h"
+
+1362500796 /home/llxp/Programme/lern_programme/db_tree/structs.h
+
+1362499563 /home/llxp/Programme/lern_programme/db_tree/funcs.h
+
+1363989984 /home/llxp/Programme/lern_programme/db_tree/funcs_bin.h
+

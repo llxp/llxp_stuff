@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="arrays.h" open="1" top="0" tabpos="6">
+		<Cursor position="6458" topLine="266" />
+	</File>
+	<File name="defined.h" open="1" top="0" tabpos="4">
+		<Cursor position="1008" topLine="0" />
+	</File>
+	<File name="funcs.h" open="1" top="0" tabpos="3">
+		<Cursor position="2300" topLine="39" />
+	</File>
+	<File name="htmlfuncs.h" open="1" top="0" tabpos="5">
+		<Cursor position="1867" topLine="67" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="2">
+		<Cursor position="862" topLine="0" />
+	</File>
+	<File name="mysql_funcs.h" open="1" top="0" tabpos="7">
+		<Cursor position="456" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

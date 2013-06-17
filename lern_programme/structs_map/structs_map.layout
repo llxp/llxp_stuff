@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="funcs.h" open="1" top="0" tabpos="5">
+		<Cursor position="117" topLine="0" />
+	</File>
+	<File name="loader.h" open="1" top="0" tabpos="3">
+		<Cursor position="90" topLine="0" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1">
+		<Cursor position="3705" topLine="74" />
+	</File>
+	<File name="structs.c" open="1" top="0" tabpos="2">
+		<Cursor position="73" topLine="0" />
+	</File>
+	<File name="vars.h" open="1" top="0" tabpos="4">
+		<Cursor position="533" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
