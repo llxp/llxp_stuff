@@ -77,24 +77,38 @@ printf("%s", rowmem);*/
 return counter;
 }
 
-char *rows(char *file_x){
-    char rowmem_string[4];
-    char *rowmem;
+int **rows(char *file_x){
+    //char rowmem_string[4];
+    //char *rowmem;
+    int **rowmem;
     int counter_row=0;
     FILE * file_xx;
     file_xx = fopen(file_x, "r");
     int c_=0;
-    rowmem=malloc(sizeof(char) *lines(file_x)*2);
-    while(c_!=EOF){
-        c_=getc(file_xx);
-        if(c_=='\n'){
-            sprintf(rowmem_string, ",%i", counter_row);
-            strcat(rowmem, rowmem_string);
-            counter_row=0;
-        }else{
-            counter_row++;
-        }
+    int linenumber=lines(file_x);
+    rowmem=malloc(sizeof(int *) *linenumber);
+    if(NULL==rowmem){
+        printf("Kein virtueller RAM mehr vorhanden ... !\n");
+        return 0;
     }
+    //for(i = 0; i < linenumber; i++) {
+        while(c_!=EOF){
+            c_=getc(file_xx);
+            if(c_=='\n'){
+                counter_row=0;
+                counter_line++;
+                      rowmem[counter_line] = malloc(counter_row * sizeof(int));
+         if(NULL == rowmem[cunter_line]) {
+            printf("Kein Speicher mehr fuer Zeile %d\n",i);
+            return 0;
+         }
+            }
+            else{
+                counter_row++;
+                counter_line=0;
+            }
+        }
+   //}
     fclose(file_xx);
     return rowmem;
 }
@@ -103,14 +117,18 @@ int row_output(char *filename, int line){
     int i;
     FILE *filetoopen;
     filetoopen=fopen(filename,"r");
-    char pufferx_[1024];
+    //char pufferx_[1024];
     //char **truerow;
-    /*char *rowsnumbers=rows(filename);
+    char *rowsnumbers=rows(filename);
     int ln=0;
-    for(i=0;i<line;i++){
+    /*for(i=0;i<line;i++){
         fgets(pufferx_, 1024, filetoopen);
+    }*/
+    for(i=0;i<lines(filename);i++){
+        printf("%i,", rownumbers[i+1]);
     }
-    while(ln<lines(filename)){
+    //matrix=malloc();
+    /*while(ln<lines(filename)){
         if(truerow[ln]=malloc(sizeof(char)*rowsnumbers[ln+1])==NULL){
             printf("Can't allocate memory!");
         }else{
@@ -128,34 +146,43 @@ int row_output(char *filename, int line){
     fclose(filetoopen);
     return 0;
 }
+void fileloader(char *filename_x){
+}
+int loop_content(){
+    return 0;
+}
 
+char *openreadsocket(int socket){
+    return 0;
+}
 int main(int argc, char *argv[]) {
         char *file__ = "test.htm";
 //    char rowmem_string[4];
-    char *text = NULL;
+//    char *text = NULL;
 //    int len = 0;
 //    int c=0;
 struct hostent *hp_new; /* from gethostbyname() */
     // Sender Variablen
     int sock, bytes;
     int sock_new;
-  char buf[80]="hallo";
-  strcpy(buf, "abc");
+  char buf[1024]="hallo";
+  char *xd="bla";
+  strcpy(buf, xd);
   struct sockaddr_in  srv_addr;  /* server's Internet socket address */
 // Sender Variablen
 
 // Listening/Server Variablen
 //    FILE *file;
-    int counter=0;
-    int counter_row=0;
+//    int counter=0;
+//    int counter_row=0;
 /*    char puffer[20];
     char **globpuffer;*/
-char *sysmsg, *sysmsg_;
+//char *sysmsg, *sysmsg_;
 unsigned int server_port=atoi(argv[1]);
 unsigned int server_port_new=atoi(argv[3]);
   char message[1024];
   struct sockaddr_in name;
-  struct hostent *hp, *gethostbyname();
+//  struct hostent *hp, *gethostbyname();
 /*
 
 //  char *sf;
@@ -178,11 +205,11 @@ unsigned int server_port_new=atoi(argv[3]);
         }*/
 
 //char *xyz=row_output(file__, 0);
-printf("%d", lines(file__));
-text = malloc(lines(file__)*sizeof(char));
-printf("achtung: %s\n", rows(file__));
+//printf("!!!!!!!!!!!!!!::::%d::::!!!!", lines(file__));
+//text = malloc(lines(file__)*sizeof(char));
+//printf("achtung: %s\n", rows(file__));
 //printf("%d Zeilen\n", len);
-printf("%i", row_output(file__, 0));
+printf("\nZeile ist %i Zeichen lang!\n\n", row_output(file__, 0));
 
   printf("Listen activating.\n");
 
@@ -207,10 +234,10 @@ printf("%i", row_output(file__, 0));
 
   printf("Web Server runs on port number #%d\n", ntohs(name.sin_port));
 start:
-while((bytes = read(sock, message, 1024)) > 0) {
+    while((bytes = read(sock, message, 1024)) > 0) {
     message[bytes] = '\0';
     printf("recv: %s\n", message);
-if(strstr(message, "msg")){
+if(strstr(message, "/")){
   //Sender opening connection
   bzero((char *) &srv_addr, sizeof(srv_addr));
   srv_addr.sin_family = AF_INET;
@@ -230,11 +257,15 @@ if(strstr(message, "msg")){
       /* not strictly needed with UDP socket, but binds local half */
   if (connect(sock_new, (struct sockaddr *) &srv_addr, sizeof(srv_addr))<0) {
     perror("connect error");
+    close(sock_new);
     exit(1);
   }
+  strcpy(buf, message);
         if (send(sock_new, buf, strlen(buf), 0) != strlen(buf)){
       perror("send");
+      close(sock_new);
   }
+  close(sock_new);
     //printf("xyz");
         //sysmsg=strtok(message,"msg");
         //if(NULL!=sysmsg){
@@ -252,5 +283,6 @@ goto start;
 }
   }goto start;
   close(sock);
+  close(sock_new);
 }
 
